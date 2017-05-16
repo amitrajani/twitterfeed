@@ -1,0 +1,15 @@
+﻿@model SitecoreTwitterFeed.Web.Models.TwitterViewModel
+
+<div>
+    <ul id="twitterFeeds">
+        @foreach (var tweet in Model.Tweets)
+        {
+            <li>
+                <p class="tweet-content">
+                    @tweet.TweetMessage
+                </p>
+                <p class="tweet-datetime">@tweet.TweetDateTime</p>
+            </li>
+        }
+    </ul>
+</div>
